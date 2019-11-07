@@ -73,7 +73,7 @@ class Interface:
         if self.check_valid_inputs(self.number, self.row, self.column):
             return self.game_object.insert_number(self.number, int(self.row)-1, int(self.column)-1)
         else:
-            return "\nIngrese numeros validos"
+            return print("\nPls Insert Valid Values")
 
     
     def check_valid_inputs(self, number, row, column):
